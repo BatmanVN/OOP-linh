@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace VuLinh_OOP.DAO
 {
-    public class Function<T>
+    public class Function
     {
-        //public void InsertTable(List<T> list);
+        
     }
 }

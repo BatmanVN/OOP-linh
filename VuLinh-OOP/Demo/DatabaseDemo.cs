@@ -18,7 +18,7 @@ namespace VuLinh_OOP.Demo
         static List<Category> categories = new List<Category>();
         static List<Accessotion> accessions = new List<Accessotion>();
         public static Database database = new Database();
-
+        
         static void Main(string[] args)
         {
             InitDataBase();
@@ -26,8 +26,10 @@ namespace VuLinh_OOP.Demo
         public static void InitDataBase()
         {
             InsertTableTest();
-            UpdateTalbeTest();
-            DeleteTableTest();
+            //SelectTableTest();
+            //UpdateTalbeTest();
+            UpdateTableByID();
+            //DeleteTableTest();
             TruncateTable();
             Console.ReadKey();
         }
@@ -38,11 +40,11 @@ namespace VuLinh_OOP.Demo
             for (int i = 0; i < 10; i++)
             {
                 database.InsertTable(name, new Entity(i, name));
-                database.SelectTable(name);
             }
         }
         public static void SelectTableTest()
         {
+            Console.Write("Show Select Table: ");
             string name = Console.ReadLine();
             database.SelectTable(name);
         }
@@ -50,13 +52,26 @@ namespace VuLinh_OOP.Demo
         {
             Console.Write("New Row: ");
             string name = Console.ReadLine();
-            database.UpdateTable(name, new Entity(2, "Linh"));
+            Console.Write("Id Update: ");
+            int id = int.Parse(Console.ReadLine());
+            database.UpdateTable(name, new Entity(id, $"New {name}"));
+        }
+        public static void UpdateTableByID()
+        {
+            Console.Write("Row: ");
+            string name = Console.ReadLine();
+            Console.Write("ID: ");
+            int id = int.Parse(Console.ReadLine());
+            database.UpdateTableByID(id, name, new Entity(id, $"New {name}"));
         }
         public static void DeleteTableTest()
         {
             Console.Write("Row: ");
             string name = Console.ReadLine();
-            database.DeleteTable(name, new Entity(2, name));
+            Console.Write("Remove ID:");
+            int id = int.Parse(Console.ReadLine());
+            database.DeleteTable(name, new Entity(id, name));
+            SelectTableTest();
         }
 
         public static void TruncateTable()
@@ -65,5 +80,6 @@ namespace VuLinh_OOP.Demo
             string name = Console.ReadLine();
             database.TruncateTable(name);
         }
+
     }
 }

@@ -1,10 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\OS\\Desktop\\OOP-linh\\",
+  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\os\\desktop\\oop-linh\\vulinh-oop\\demo\\databasedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\demo\\databasedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\demo\\databasedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\dao\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\dao\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\dao\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\dao\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\dao\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\dao\\productdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\dao\\accessotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\dao\\accessotiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|c:\\users\\pc\\desktop\\entity\\oop-linh\\vulinh-oop\\entities\\accessotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D31A893E-4748-4C17-9A8F-5B63E2B1B690}|VuLinh-OOP\\VuLinh-OOP.csproj|solutionrelative:vulinh-oop\\entities\\accessotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +50,146 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductDAO.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\ProductDAO.cs",
+              "RelativeDocumentMoniker": "VuLinh-OOP\\DAO\\ProductDAO.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\ProductDAO.cs",
+              "RelativeToolTip": "VuLinh-OOP\\DAO\\ProductDAO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:57:38.909Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccessotionDAO.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\AccessotionDAO.cs",
+              "RelativeDocumentMoniker": "VuLinh-OOP\\DAO\\AccessotionDAO.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\AccessotionDAO.cs",
+              "RelativeToolTip": "VuLinh-OOP\\DAO\\AccessotionDAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:57:38.661Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryDAO.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\CategoryDAO.cs",
+              "RelativeDocumentMoniker": "VuLinh-OOP\\DAO\\CategoryDAO.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\CategoryDAO.cs",
+              "RelativeToolTip": "VuLinh-OOP\\DAO\\CategoryDAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:57:38.737Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DatabaseDemo.cs",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\OOP-linh\\VuLinh-OOP\\Demo\\DatabaseDemo.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Demo\\DatabaseDemo.cs",
               "RelativeDocumentMoniker": "VuLinh-OOP\\Demo\\DatabaseDemo.cs",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\OOP-linh\\VuLinh-OOP\\Demo\\DatabaseDemo.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Demo\\DatabaseDemo.cs",
               "RelativeToolTip": "VuLinh-OOP\\Demo\\DatabaseDemo.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAbAAAAAAAAAA==",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwEEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T10:42:19.379Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Function.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\Function.cs",
+              "RelativeDocumentMoniker": "VuLinh-OOP\\DAO\\Function.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\Function.cs",
+              "RelativeToolTip": "VuLinh-OOP\\DAO\\Function.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:57:38.853Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\Database.cs",
+              "RelativeDocumentMoniker": "VuLinh-OOP\\DAO\\Database.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\DAO\\Database.cs",
+              "RelativeToolTip": "VuLinh-OOP\\DAO\\Database.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAqwDUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:57:38.797Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "VuLinh-OOP\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Entities\\Product.cs",
+              "RelativeToolTip": "VuLinh-OOP\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:57:49.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Entities\\Entity.cs",
+              "RelativeDocumentMoniker": "VuLinh-OOP\\Entities\\Entity.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Entities\\Entity.cs",
+              "RelativeToolTip": "VuLinh-OOP\\Entities\\Entity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:57:49.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "VuLinh-OOP\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Entities\\Category.cs",
+              "RelativeToolTip": "VuLinh-OOP\\Entities\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:57:49.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Accessotion.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Entities\\Accessotion.cs",
+              "RelativeDocumentMoniker": "VuLinh-OOP\\Entities\\Accessotion.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Entity\\OOP-linh\\VuLinh-OOP\\Entities\\Accessotion.cs",
+              "RelativeToolTip": "VuLinh-OOP\\Entities\\Accessotion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T13:57:49.195Z",
               "EditorCaption": ""
             }
           ]
