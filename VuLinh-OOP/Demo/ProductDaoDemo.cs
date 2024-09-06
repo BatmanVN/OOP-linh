@@ -33,6 +33,9 @@ namespace VuLinh_OOP.Demo
                 productDao.InsertTable(name,new Product(i, name));
             }
         }
+        /// <summary>
+        /// Create i element and add to list<> correpond with keyName, then print this lis<>
+        /// </summary>
         public static void InitTableTest()
         {
             string name = NameProduct.nameProduct;
@@ -43,6 +46,9 @@ namespace VuLinh_OOP.Demo
             }
             productDao.PrintTable(Database.Instance.table[name]);
         }
+        /// <summary>
+        /// Input name then display all elements of List<> correpond with keyName
+        /// </summary>
         public static void SelecteTable()
         {
             string name = NameProduct.nameProduct;
@@ -51,6 +57,10 @@ namespace VuLinh_OOP.Demo
             productDao.PrintTable(Database.Instance.table[name]);
 
         }
+
+        /// <summary>
+        /// Input keyName,ID then compare with element in list<>, delete it
+        /// </summary>
         public static void DeleteTable()
         {
             Random rand = new Random();
@@ -61,6 +71,9 @@ namespace VuLinh_OOP.Demo
             productDao.DeleteTable(name, new Product(id, name));
             productDao.PrintTable(Database.Instance.table[name]);
         }
+        /// <summary>
+        /// Input new obj then change with 1 element in list<>
+        /// </summary>
         public static void UpdateTable()
         {
             Random rand = new Random();
@@ -70,6 +83,9 @@ namespace VuLinh_OOP.Demo
             productDao.UpdateTable(name, new Product(id, $"New {name}"));
             productDao.PrintTable(Database.Instance.table[name]);
         }
+        /// <summary>
+        /// Input int ID then compare with all Element in List<> then show it 
+        /// </summary>
         public static void FindTableByID()
         {
             Random random = new Random();

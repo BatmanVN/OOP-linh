@@ -25,12 +25,18 @@ namespace VuLinh_OOP.DAO
         {
             table[name].Add(row);
         }
+        /// <summary>
+        /// Create Method SelectTable to Display all Object of list<> conrresponding with keyName in Dictionary
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public List<Entity> SelectTable(string name)
         {
             List<Entity> list = table[name];
             //list.ForEach(s => Console.WriteLine($"Show: Id:{s.Id}  Name:{s.Name}  CateID:{s.Id}"));
             return list;
         }
+
         public void UpdateTable(string name, Entity row)
         {
             List<Entity> list = table[name];
@@ -43,6 +49,12 @@ namespace VuLinh_OOP.DAO
                 //Console.WriteLine($"ID:{list[i].Id}  Name:{list[i].Name}  CateID:{list[i].Id}");
             }
         }
+        /// <summary>
+        /// Create Mehod UpdateTable to add new object to list<>, find id and change new row
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="row"></param>
         public void UpdateTableByID(int id, string name, Entity row)
         {
             //string name = row.Name;
@@ -55,6 +67,11 @@ namespace VuLinh_OOP.DAO
                 //list.ForEach(s => Console.WriteLine($"ID:{s.Id}  Name:{s.Name}  CateID:{s.Id}"));
             }
         }
+        /// <summary>
+        /// Create Method DeleteTable to delete obj with keyName,id you input
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="row"></param>
         public void DeleteTable(string name, Entity row)
         {
             List<Entity> list = table[name];
@@ -66,6 +83,10 @@ namespace VuLinh_OOP.DAO
                 //list.ForEach(s => Console.WriteLine($"Id:{s.Id}  Name:{s.Name}  CateID:{s.Id}"));
             }
         }
+        /// <summary>
+        /// Create Mehtod TruncateTable to delete all list<> correponding with keyName had been input
+        /// </summary>
+        /// <param name="name"></param>
         public void TruncateTable(string name)
         {
             List<Entity> list = table[name];

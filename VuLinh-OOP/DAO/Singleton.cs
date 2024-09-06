@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace VuLinh_OOP.DAO
 {
+    /// <summary>
+    /// Create Sigleton with generic T to create just 1 Constructor for all child to save database
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Singleton<T> where T : class, new()
     {
         private static T _instance;
