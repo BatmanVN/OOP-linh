@@ -18,7 +18,7 @@ namespace VuLinh_OOP.Demo
         static List<Category> categories = new List<Category>();
         static List<Accessotion> accessions = new List<Accessotion>();
         public static Database database = new Database();
-        
+
         static void Main(string[] args)
         {
             InitDataBase();
@@ -28,8 +28,8 @@ namespace VuLinh_OOP.Demo
             InsertTableTest();
             //SelectTableTest();
             //UpdateTalbeTest();
-            UpdateTableByID();
-            //DeleteTableTest();
+            //UpdateTableByID();
+            DeleteTableTest();
             TruncateTable();
             Console.ReadKey();
         }

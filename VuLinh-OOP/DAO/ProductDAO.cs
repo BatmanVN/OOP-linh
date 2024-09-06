@@ -7,37 +7,34 @@ using VuLinh_OOP.Entities;
 
 namespace VuLinh_OOP.DAO
 {
-    public class ProductDAO
+    public class ProductDAO : BaseDAO
     {
-        Database database = new Database();
-        public void Insert(Entity row)
-        {
+        //Database database = new Database();
+        //public void InsertTable(string name, Product row)
+        //{
+        //    database.InsertTable(name, row);
+        //}
 
-        }
-        public void Update(Entity row)
-        {
+        //public void UpdateTable(string name, Product row)
+        //{
+        //    database.UpdateTable(name, row);
+        //}
 
-        }
-        public void Delete(Entity row)
-        {
+        //public void DeleteTable(string name, Product row)
+        //{
+        //    database.DeleteTable(name, row);
+        //}
 
-        }
-        public void FindAll()
-        {
+        //public new List<Product> SelectTable(string name)
+        //{
+        //    List<Product> list = database.products;
+        //    database.SelectTable(name);
+        //    return list;
+        //}
 
-        }
-        public void FindById(string name)
-        {
-
-        }
-        public void FindByName(string name)
-        {
-
-        }
-        public List<Product> Search()
-        {
-            List<Product> list = database.products;
-            return list;
-        }
+        //public void FindByID(string name, Product row)
+        //{
+        //    database.FindByID(name, row);
+        //}
     }
 }

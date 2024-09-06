@@ -7,37 +7,34 @@ using VuLinh_OOP.Entities;
 
 namespace VuLinh_OOP.DAO
 {
-    public class AccessotionDAO
+    public class AccessotionDAO : BaseDAO
     {
-        Database database = new Database();
-        public void Insert(Entity row)
-        {
+        //public string daoName = "accessory";
+        //Database database = new Database();
 
-        }
-        public void Update(Entity row)
-        {
+        //public void DeleteTable(string name, Accessotion value)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        }
-        public void Delete(Entity row)
-        {
+        //public void FindByID(string name, Accessotion Value)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        }
-        public void FindAll()
-        {
+        //public void InsertTable(string name, Accessotion value)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        }
-        public void FindById(string name)
-        {
+        //public List<Accessotion> SelectTable(string name)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        }
-        public void FindByName(string name)
-        {
-
-        }
-        public List<Accessotion> Search()
-        {
-            List<Accessotion> list = database.accessotions;
-            return list;
-        }
+        //public void UpdateTable(string name, Accessotion value)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

@@ -46,17 +46,23 @@
     <Compile Include="DAO\AccessotionDAO.cs" />
     <Compile Include="DAO\CategoryDAO.cs" />
     <Compile Include="DAO\Database.cs" />
-    <Compile Include="DAO\Function.cs" />
+    <Compile Include="DAO\BaseDAO.cs" />
+    <Compile Include="DAO\IFunction.cs" />
     <Compile Include="DAO\ProductDAO.cs" />
     <Compile Include="Demo\AccessiotionDemo.cs" />
-    <Compile Include="Demo\CategoryDaoDemo.cs" />
+    <None Include="Demo\CategoryDaoDemo.cs" />
+    <None Include="Demo\AccessotionDaoDemo.cs" />
     <Compile Include="Demo\CategoryDemo.cs" />
-    <Compile Include="Demo\DatabaseDemo.cs" />
-    <Compile Include="Demo\ProductDemo.cs" />
+    <None Include="Demo\DatabaseDemo.cs" />
+    <Compile Include="Demo\ProductDaoDemo.cs" />
+    <None Include="Demo\ProductDemo.cs" />
     <Compile Include="Entities\Accessotion.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\IPrint.cs" />
+    <Compile Include="Entities\NameProduct.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="DAO\Singleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

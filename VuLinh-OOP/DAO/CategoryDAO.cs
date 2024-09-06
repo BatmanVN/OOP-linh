@@ -7,28 +7,28 @@ using VuLinh_OOP.Entities;
 
 namespace VuLinh_OOP.DAO
 {
-    public class CategoryDAO
+    public class CategoryDAO : BaseDAO
     {
-        Database database = new Database();
-        public void Insert(Entity row)
-        {
-            database.InsertTable("category", row);
-        }
-        public void Update(Entity row)
-        {
 
-        }
-        public void Delete(Entity row)
-        {
+        //Database database = new Database();
+        //public void InsertTable(string name, Category row)
+        //{
+        //    database.InsertTable(name, row);
+        //}
 
-        }
-        public void FindAll()
-        {
+        //public void UpdateTable(string name, Category row)
+        //{
+        //    database.UpdateTable(name, row);
+        //}
 
-        }
-        public void FindById(string name)
-        {
+        //public void DeleteTable(string name, Category row)
+        //{
+        //    database.DeleteTable(name, row);
+        //}
 
-        }
+        //public void FindByID(string name, Category row)
+        //{
+        //    database.FindByID(name, row);
+        //}
     }
 }
