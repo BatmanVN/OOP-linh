@@ -10,12 +10,15 @@ namespace VuLinh_OOP.DAO
 {
     public class Database : Singleton<Database>
     {
-        public Dictionary<string, List<Entity>> table = new Dictionary<string, List<Entity>>()
+        private Dictionary<string, List<Entity>> table = new Dictionary<string, List<Entity>>()
         {
             {NameProduct.nameProduct, new List<Entity>()},
             {NameProduct.nameAccessory, new List<Entity>()},
             {NameProduct.nameCategory, new List<Entity>()},
         };
+
+        public Dictionary<string, List<Entity>> Table { get => table;}
+
         /// <summary>
         /// Create Method InsertTable to add new Obj to list<> with keyName in Ditonary
         /// </summary>
@@ -44,9 +47,8 @@ namespace VuLinh_OOP.DAO
             {
                 if (row.Id == list[i].Id)
                 {
-                    table[name][i] = row;
+                    Table[name][i] = row;
                 }
-                //Console.WriteLine($"ID:{list[i].Id}  Name:{list[i].Name}  CateID:{list[i].Id}");
             }
         }
         /// <summary>
@@ -59,7 +61,7 @@ namespace VuLinh_OOP.DAO
         {
             //string name = row.Name;
             List<Entity> list = table[name];
-            if (table.ContainsKey(name))
+            if (Table.ContainsKey(name))
             {
                 list.RemoveAt(id);
                 list.Insert(id, row);
@@ -75,7 +77,7 @@ namespace VuLinh_OOP.DAO
         public void DeleteTable(string name, Entity row)
         {
             List<Entity> list = table[name];
-            if (table.ContainsKey(name))
+            if (Table.ContainsKey(name))
             {
                 list.FindAll(s => s.Id == row.Id);
                 list.RemoveAt(row.Id);
@@ -91,7 +93,7 @@ namespace VuLinh_OOP.DAO
         {
             List<Entity> list = table[name];
             var count = list.Count(x => x.Equals(name));
-            if (table.ContainsKey(name))
+            if (Table.ContainsKey(name))
             {
                 list.RemoveAll(s => s.Equals(name));
                 if (count <= 0)
@@ -100,12 +102,18 @@ namespace VuLinh_OOP.DAO
                 }
             }
         }
+        /// <summary>
+        /// Create Method FindByID to input ID need search ,then display it.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="row"></param>
         public void FindByID(string name, Entity row)
         {
             List<Entity> list = table[name];
-            if (table.ContainsKey(name))
+            if (Table.ContainsKey(name))
             {
-                list.Where(s => s.Id == row.Id);
+                //list.Where(s => s.Id == row.Id);
+                list.Find(x => x.Id == row.Id);
                 //Console.WriteLine($"Finded :ID: {row.Id}  Name: {row.Name}  Category:{row.Id}");
             }
         }

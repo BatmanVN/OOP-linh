@@ -9,7 +9,7 @@ namespace VuLinh_OOP.DAO
 {
     public interface IFunction
     {
-        void FindByName(Entity row);
-        void Search();
+        Entity FindByName(string name);
+        List<Entity> Search(string name);
     }
 }

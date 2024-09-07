@@ -10,9 +10,11 @@ using VuLinh_OOP.Entities;
 
 namespace VuLinh_OOP.Demo
 {
-    public class CategoryDaoDemo 
+    public class CategoryDaoDemo
     {
-        static CategoryDAO categoryDAO = new CategoryDAO();
+        private static CategoryDAO categoryDAO = new CategoryDAO();
+        private static int quantity = categoryDAO.InputInt("Input Quantity Product: ");
+        private static string nameC;
 
         static void Main(string[] args)
         {
@@ -29,56 +31,52 @@ namespace VuLinh_OOP.Demo
         {
             string name = NameProduct.nameCategory;
             Console.WriteLine($"-Insert Table: {name} ");
-            for (int i = 0; i < 10; i++)
-            {
-                categoryDAO.InsertTable(name,new Category(i, name));
-            }
+            categoryDAO.InsertTable(name,new Category(1, name));
         }
         public static void InitTableTest()
         {
             string name = NameProduct.nameCategory;
             Console.WriteLine($"-InsertTable: {name} ");
-            for (int i = 0; i < 10; i++)
+            for(int i = 0; i < quantity; i++)
             {
-                categoryDAO.InsertTable(name, new Accessotion(i, name));
+                nameC = name + i;
+                categoryDAO.InsertTable(name, new Accessotion(i, nameC));
             }
-            categoryDAO.PrintTable(Database.Instance.table[name]);
+            categoryDAO.PrintTable(Database.Instance.Table[name]);
         }
         public static void SelecteTable()
         {
             string name = NameProduct.nameCategory;
             Console.WriteLine($"-Select Table: {name}");
             categoryDAO.SelectTable(name);
-            categoryDAO.PrintTable(Database.Instance.table[name]);
+            categoryDAO.PrintTable(Database.Instance.Table[name]);
         }
         public static void DeleteTable()
         {
-            Random rand = new Random();
             string name = NameProduct.nameCategory;
             Console.WriteLine($"-Delete Table: {name}");
-            int id = rand.Next(0, 9);
-            Console.WriteLine($"-ID: {id}");
+            int id = categoryDAO.InputInt("Input ID Delete: ");
             categoryDAO.DeleteTable(name, new Category(id,name));
-            categoryDAO.PrintTable(Database.Instance.table[name]);
+            categoryDAO.PrintTable(Database.Instance.Table[name]);
         }
         public static void UpdateTable()
         {
-            Random rand = new Random();
+
             string name = NameProduct.nameCategory;
             Console.WriteLine($"-Update Table: {name}");
-            int id = rand.Next(0, 9);
-            categoryDAO.UpdateTable(name, new Category(id, $"New {name}"));
-            categoryDAO.PrintTable(Database.Instance.table[name]);
+            int id = categoryDAO.InputInt("Input ID Update: ");
+            nameC = "New " + name;
+            accessoryDAO.UpdateTable(name, new Accessotion(id, $"New {nameC}"));
+            categoryDAO.PrintTable(Database.Instance.Table[name]);
         }
         public static void FindTableByID()
         {
-            Random random = new Random();
             string name = NameProduct.nameCategory;
             Console.WriteLine($"-Find Table ID: {name}");
-            int id = random.Next(0, 9);
+            int id = categoryDAO.InputInt("Input ID Find: ");
             Console.WriteLine($"-ID: {id} Name: {name}  CategoryID: {id}");
             categoryDAO.FindByID(name, new Category(id, name));
-            categoryDAO.PrintTable(Database.Instance.table[name]);
         }
+
     }
 }

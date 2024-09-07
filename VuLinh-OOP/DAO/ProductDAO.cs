@@ -7,34 +7,29 @@ using VuLinh_OOP.Entities;
 
 namespace VuLinh_OOP.DAO
 {
-    public class ProductDAO : BaseDAO
+    public class ProductDAO : BaseDAO, IFunction
     {
-        //Database database = new Database();
-        //public void InsertTable(string name, Product row)
-        //{
-        //    database.InsertTable(name, row);
-        //}
-
-        //public void UpdateTable(string name, Product row)
-        //{
-        //    database.UpdateTable(name, row);
-        //}
-
-        //public void DeleteTable(string name, Product row)
-        //{
-        //    database.DeleteTable(name, row);
-        //}
-
-        //public new List<Product> SelectTable(string name)
-        //{
-        //    List<Product> list = database.products;
-        //    database.SelectTable(name);
-        //    return list;
-        //}
-
-        //public void FindByID(string name, Product row)
-        //{
-        //    database.FindByID(name, row);
-        //}
+        /// <summary>
+        /// Create Method FindbyName, Type Object,  input Name then find it in List<> correpond with keyName
+        /// </summary>
+        /// <param name="name">find Name = elementName, will display this element if have</param>
+        /// <returns></returns>
+        public Entity FindByName(string name)
+        {
+            List<Entity> list = Database.Instance.Table[NameProduct.nameCategory];
+            var row = list.Find(x => x.Name == name);
+            return row;
+        }
+        /// <summary>
+        /// Create Method Search, Type List, input a string then find it in List<> correpond with keyName
+        /// </summary>
+        /// <param name="name">search in list, display all element have it in list </param>
+        /// <returns></returns>
+        public List<Entity> Search(string name)
+        {
+            List<Entity> list = Database.Instance.Table[NameProduct.nameCategory];
+            list.Where(x => x.Name == name);
+            return list;
+        }
     }
 }

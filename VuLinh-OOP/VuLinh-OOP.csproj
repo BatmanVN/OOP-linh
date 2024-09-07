@@ -51,10 +51,10 @@
     <Compile Include="DAO\ProductDAO.cs" />
     <Compile Include="Demo\AccessiotionDemo.cs" />
     <None Include="Demo\CategoryDaoDemo.cs" />
-    <None Include="Demo\AccessotionDaoDemo.cs" />
+    <Compile Include="Demo\AccessotionDaoDemo.cs" />
     <Compile Include="Demo\CategoryDemo.cs" />
     <None Include="Demo\DatabaseDemo.cs" />
-    <Compile Include="Demo\ProductDaoDemo.cs" />
+    <None Include="Demo\ProductDaoDemo.cs" />
     <None Include="Demo\ProductDemo.cs" />
     <Compile Include="Entities\Accessotion.cs" />
     <Compile Include="Entities\Category.cs" />

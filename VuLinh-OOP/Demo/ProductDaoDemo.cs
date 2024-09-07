@@ -10,8 +10,9 @@ namespace VuLinh_OOP.Demo
 {
     public class ProductDaoDemo
     {
-        const string nameProduct = "product";
-        static ProductDAO productDao = new ProductDAO();
+        private static ProductDAO productDao = new ProductDAO();
+        private static int quantity = categoryDAO.InputInt("Input Quantity Product: ");
+        private static string nameP;
 
         static void Main(string[] args)
         {
@@ -21,6 +22,8 @@ namespace VuLinh_OOP.Demo
             DeleteTable();
             UpdateTable();
             FindTableByID();
+            FindByName();
+            SearchTable();
             Console.ReadKey();
         }
 
@@ -30,7 +33,8 @@ namespace VuLinh_OOP.Demo
             Console.WriteLine($"-Insert Table: {name} ");
             for (int i = 0; i < 10; i++)
             {
-                productDao.InsertTable(name,new Product(i, name));
+                nameP = name + i;
+                productDao.InsertTable(name,new Product(i, nameP));
             }
         }
         /// <summary>
@@ -40,9 +44,10 @@ namespace VuLinh_OOP.Demo
         {
             string name = NameProduct.nameProduct;
             Console.WriteLine($"-Insert Table: {name} ");
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < quantity; i++)
             {
-                productDao.InsertTable(name, new Product(i, name));
+                nameP = name + i;
+                productDao.InsertTable(name, new Product(i, nameP));
             }
             productDao.PrintTable(Database.Instance.table[name]);
         }
@@ -63,11 +68,9 @@ namespace VuLinh_OOP.Demo
         /// </summary>
         public static void DeleteTable()
         {
-            Random rand = new Random();
             string name = NameProduct.nameProduct;
             Console.WriteLine($"-Delete Table: {name}");
-            int id = rand.Next(0, 9);
-            Console.WriteLine($"-ID: {id}");
+            int id = productDao.InputInt("Input ID Delete: ");
             productDao.DeleteTable(name, new Product(id, name));
             productDao.PrintTable(Database.Instance.table[name]);
         }
@@ -76,11 +79,11 @@ namespace VuLinh_OOP.Demo
         /// </summary>
         public static void UpdateTable()
         {
-            Random rand = new Random();
             string name = NameProduct.nameProduct;
             Console.WriteLine($"-Update Table: {name}");
-            int id = rand.Next(0, 9);
-            productDao.UpdateTable(name, new Product(id, $"New {name}"));
+            int id = productDao.InputInt("Input ID Update: ");
+            nameP = "New " + name;
+            accessoryDAO.UpdateTable(name, new Accessotion(id, $"New {nameP}"));
             productDao.PrintTable(Database.Instance.table[name]);
         }
         /// <summary>
@@ -88,14 +91,31 @@ namespace VuLinh_OOP.Demo
         /// </summary>
         public static void FindTableByID()
         {
-            Random random = new Random();
             string name = NameProduct.nameProduct;
             Console.WriteLine($"-Find Table ID: {name}");
-            int id = random.Next(0, 9);
-            Console.WriteLine($"-ID: {id} Name: {name}  CategoryID: {id}");
+            int id = productDao.InputInt("Input ID Find: ");
+            Console.WriteLine($"-ID: {id} Name: {nameP}  CategoryID: {id}");
             productDao.FindByID(name, new Product (id, name));
-            productDao.PrintTable(Database.Instance.table[name]);
         }
 
+
+        public static void FindByName()
+        {
+            string name = NameProduct.nameProduct;
+            List<Entity> list = Database.Instance.Table[name];
+            Console.WriteLine($"-Find Name: ");
+            string findName = productDao.InpuntStr("Input Name Find:");
+            productDao.FindByName(findName);
+            var row = list.Find(x => x.Name.Equals(findName));
+            Console.WriteLine($"Name Find: {findName}   ID: {row.Id}  Category:{row.Id}");
+        }
+        public static void SearchTable()
+        {
+            string name = NameProduct.nameProduct;
+            List<Entity> list = Database.Instance.Table[name];
+            string findName = categoryDAO.InpuntStr("Input Word Find:");
+            productDao.Search(findName);
+            productDao.PrintTable(Database.Instance.Table[name]);
+        }
     }
 }

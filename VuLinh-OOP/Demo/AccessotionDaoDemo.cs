@@ -10,9 +10,9 @@ namespace VuLinh_OOP.Demo
 {
     public class AccessotionDaoDemo
     {
-        static AccessotionDAO accessoryDAO = new AccessotionDAO();
-        
-
+        private static AccessotionDAO accessoryDAO = new AccessotionDAO();
+        private static int quantity = accessoryDAO.InputInt("Input Quantity Product: ");
+        private static string nameA;
         static void Main(string[] args)
         {
             //InsertRow();
@@ -21,6 +21,8 @@ namespace VuLinh_OOP.Demo
             DeleteTable();
             UpdateTable();
             FindTableByID();
+            FindByName();
+            SearchTable();
             Console.ReadKey();
         }
 
@@ -28,58 +30,71 @@ namespace VuLinh_OOP.Demo
         {
             string name = NameProduct.nameAccessory;
             Console.WriteLine($"-InsertTable: {name} ");
-            for (int i = 0; i < 10; i++)
-            {
-                accessoryDAO.InsertTable(name, new Accessotion(i, name));
-            }
-            var ls = accessoryDAO.SelectTable(name);
-            accessoryDAO.PrintTable(Database.Instance.table[name]);
+            accessoryDAO.InsertTable(name, new Accessotion(1, name));
+            //accessoryDAO.PrintTable(Database.Instance.table[name]);
         }
         public static void InitTableTest()
         {
             string name = NameProduct.nameAccessory;
             Console.WriteLine($"-InsertTable: {name} ");
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < quantity; i++)
             {
-                accessoryDAO.InsertTable(name, new Accessotion(i, name));
+                nameA = name + i;
+                accessoryDAO.InsertTable(name, new Accessotion(i, nameA));
             }
-            accessoryDAO.PrintTable(Database.Instance.table[name]);
+            accessoryDAO.PrintTable(Database.Instance.Table[name]);
         }
         public static void SelecteTable()
         {
             string name = NameProduct.nameAccessory;
             Console.WriteLine($"-Select Table: {name}");
             accessoryDAO.SelectTable(name);
-            accessoryDAO.PrintTable(Database.Instance.table[name]);
+            accessoryDAO.PrintTable(Database.Instance.Table[name]);
         }
         public static void DeleteTable()
         {
-            Random rand = new Random();
             string name = NameProduct.nameAccessory;
             Console.WriteLine($"-Delete Table: {name}");
-            int id = rand.Next(0, 9);
-            Console.WriteLine($"-ID: {id}");
+            int id = accessoryDAO.InputInt("Input ID Delete: ");
             accessoryDAO.DeleteTable(name, new Accessotion(id, name));
-            accessoryDAO.PrintTable(Database.Instance.table[name]);
+            accessoryDAO.PrintTable(Database.Instance.Table[name]);
         }
         public static void UpdateTable()
         {
-            Random rand = new Random();
             string name = NameProduct.nameAccessory;
             Console.WriteLine($"-Update Table: {name}");
-            int id = rand.Next(0, 9);
-            accessoryDAO.UpdateTable(name, new Accessotion(id, $"New {name}"));
-            accessoryDAO.PrintTable(Database.Instance.table[name]);
+            int id = accessoryDAO.InputInt("Input ID Update: ");
+            nameA = "New " + name; 
+            accessoryDAO.UpdateTable(name, new Accessotion(id, $"New {nameA}"));
+            accessoryDAO.PrintTable(Database.Instance.Table[name]);
         }
         public static void FindTableByID()
         {
-            Random random = new Random();
             string name = NameProduct.nameAccessory;
             Console.WriteLine($"-Find Table ID: {name}");
-            int id = random.Next(0, 9);
-            Console.WriteLine($"-ID: {id} Name: {name}  CategoryID: {id}");
-            accessoryDAO.FindByID(name, new Accessotion(id, name));
-            accessoryDAO.PrintTable(Database.Instance.table[name]);
+            int id = accessoryDAO.InputInt("Input ID Find: ");
+            Console.WriteLine($"-ID: {id} Name: {nameA}  CategoryID: {id}");
+            accessoryDAO.FindByID(name, new Accessotion(id, nameA));
+        }
+
+        public static void FindByName()
+        {
+            string name = NameProduct.nameAccessory;
+            List<Entity> list = Database.Instance.Table[name];
+            Console.WriteLine($"-Find Name: ");
+            string findName = accessoryDAO.InpuntStr("Input Name Find:");
+            accessoryDAO.FindByName(findName);
+            var row = list.Find(x => x.Name.Equals(findName));
+            Console.WriteLine($"Name Find: {findName}   ID: {row.Id}  Category:{row.Id}");
+        }
+
+        public static void SearchTable()
+        {
+            string name = NameProduct.nameAccessory;
+            List<Entity> list = Database.Instance.Table[name];
+            string findName = accessoryDAO.InpuntStr("Input Word Find:");
+            accessoryDAO.Search(findName);
+            accessoryDAO.PrintTable(Database.Instance.Table[name]);
         }
     }
 }
